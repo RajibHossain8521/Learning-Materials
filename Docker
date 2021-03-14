@@ -19,4 +19,4 @@
 # For having input in the file's
 => Run: docker run -t -i (image_name)
 
-# 
+#   
