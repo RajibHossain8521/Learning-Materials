@@ -1,1 +1,6 @@
+# For creating a docker image
+=> Run: docker build -t (image_name)
+   Run: docker build -t (image_name) .
 
+# For having input in the file's
+=> Run: docker run -t -i (image_name)
