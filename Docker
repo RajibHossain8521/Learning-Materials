@@ -45,13 +45,19 @@ about the entire ecosystem of Docker products.
 => Run: docker ps --all
 
 # Stop running docker container
-=> Run: docker stop (container_id) 
+=> Run: docker stop (container_id)
+
+# Kill running docker container forcefully
+=> Run: docker kill (container_id)
 
 
 # Create docker container from docker Image
+(NOTE: Only for pre build images of docker)
 => Run: docker create (image_name)
 Now Run this container: Run: docker start -a (container_hash_string) 
-Note: '-a' display the output of your container
+NOTE: '-a' display the output of your container
 
+# To check what's are running inside the docker container
+=> Run: docker logs (container_id)
 
 
