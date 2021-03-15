@@ -45,6 +45,7 @@ CMD ["redis-server"] (finally run redis-server in our container of base image al
              ||
              \/
 *** We can also create images using image shell ***
+* Traverse your 'Dockerfile' location path in your cmd
 Run: docker run -it alpine sh (Creating alpine container & run the shell inside of this container)
 shell: apk add --update redis (Install updated redis in alpine container)
 shell: docker commit -c 'CMD "redis-server"' container_id (Finally, Run redis server in our container)
