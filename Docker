@@ -30,13 +30,13 @@ Step 3: Setup the startup command
 ** EXAMPLE **
 Step 1
 -------
-FROM alpine
+FROM alpine (Pull 'aplpine' base image from docker hub)
 Step 2
 -------
-RUN apk add --update redis
+RUN apk add --update redis (Inside alpine image download and install updated redis apk file)
 Step 3
 --------
-CMD ["redis-server"]
+CMD ["redis-server"] (finally run redis-server in our container of base image alpine)
 
 
 *** docker run actually do two things 1. Create docker container & 2. docker start
@@ -88,6 +88,9 @@ NOTE:
 * Flags (-i, -t)
 * Exit from container shell: Press: CTRL + d
 
-  
+ 
+ # We can create docker image also follow this below way:
+ => Run: docker build -t username/image_name/version .(location of your 'Dockerfile')
+ NOTE: -t (tagged images with names or something else)
  
 
