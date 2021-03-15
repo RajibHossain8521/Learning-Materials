@@ -7,6 +7,16 @@
 * Communication of Docker: DOCKER CLIENT <=> DOCKER SERVER
 * Docker server use linux operating system in his Virtual Machine
 
+DOCKER ECOSYSTEM
+* When we say Docker that means we are talking 
+about the entire ecosystem of Docker products.
+===============================================
+=> Docker Client
+=> Docker Server
+=> Docker Machine
+=> Docker Hub
+=> Docker Compose
+
 
 # Check Docker Version
 => Run: docker -v
@@ -19,4 +29,4 @@
 # For having input in the file's
 => Run: docker run -t -i (image_name)
 
-#   
+#   f
