@@ -28,6 +28,10 @@ Step 1: Specify the base image
 Step 2: Download and install dependencies
 Step 3: Setup the startup command
 ** EXAMPLE **
+Step 0
+------
+First create a file and naming it to 'Dockerfile'
+AND inside the Dockerfile type the below instructins
 Step 1
 -------
 FROM alpine (Pull 'aplpine' base image from docker hub)
@@ -37,6 +41,13 @@ RUN apk add --update redis (Inside alpine image download and install updated red
 Step 3
 --------
 CMD ["redis-server"] (finally run redis-server in our container of base image alpine)
+             ||
+             ||
+             \/
+*** We can also create images using image shell ***
+Run: docker run -it alpine sh (Creating alpine container & run the shell inside of this container)
+shell: apk add --update redis (Install updated redis in alpine container)
+shell: docker commit -c 'CMD "redis-server"' container_id (Finally, Run redis server in our container)
 
 
 *** docker run actually do two things 1. Create docker container & 2. docker start
