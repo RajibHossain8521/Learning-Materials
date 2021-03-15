@@ -62,7 +62,9 @@ NOTE: '-a' display the output of your container
 
 # Enter into any docker container
 => Run: docker exec -i -t (container_id) sh
-NOTE: Exit from container shell: Press: CTRL + d
+NOTE: 
+* Flags (-i, -t)
+* Exit from container shell: Press: CTRL + d
 
 
 
