@@ -26,7 +26,8 @@ about the entire ecosystem of Docker products.
 => Run: docker build -t (image_name)
    Run: docker build -t (image_name) .
 
-# For having input in the file's
+# For having input in the file's (Create and Run Container)
 => Run: docker run -t -i (image_name)
 
-#   f
+# Check files or resources of Docker Images
+=> docker run (image_name) ls
