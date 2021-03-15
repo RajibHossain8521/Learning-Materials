@@ -60,4 +60,10 @@ NOTE: '-a' display the output of your container
 # To check what's are running inside the docker container
 => Run: docker logs (container_id)
 
+# Enter into any docker container
+=> Run: docker exec -i -t (container_id) sh
+NOTE: Exit from container shell: Press: CTRL + d
+
+
+
 
