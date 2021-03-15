@@ -6,6 +6,11 @@
 
 * Communication of Docker: DOCKER CLIENT <=> DOCKER SERVER
 * Docker server use linux operating system in his Virtual Machine
+* Dockerfile: Contains all the informations of docker images for running your software in a base container
+
+# Procedure of Dockeraization
+* Dockerfile ==> Docker Client ==> Docker Server(Daemon) ==> Created Usable Image ==> Container 
+
 
 DOCKER ECOSYSTEM
 * When we say Docker that means we are talking 
@@ -16,6 +21,23 @@ about the entire ecosystem of Docker products.
 => Docker Machine
 => Docker Hub
 => Docker Compose
+
+
+# Create a custom docker image
+Step 1: Specify the base image
+Step 2: Download and install dependencies
+Step 3: Setup the startup command
+** EXAMPLE **
+Step 1
+-------
+FROM alpine
+Step 2
+-------
+RUN apk add --update redis
+Step 3
+--------
+CMD ["redis-server"]
+
 
 *** docker run actually do two things 1. Create docker container & 2. docker start
 => Means: docker run (create docker container + docker start)
@@ -66,6 +88,6 @@ NOTE:
 * Flags (-i, -t)
 * Exit from container shell: Press: CTRL + d
 
-
-
+  
+ 
 
